@@ -117,6 +117,7 @@ stageSocket.onmessage = function (event) {
                     PlaySound(socketmessage.StageData.Data.TrackSource);
                     $("#song").empty();
                     $("#song").append("This song is currently playing: " + currentTrackName.innerHTML);
+                    console.log(socketmessage.StageData.Data);
                 } else {
                     alert("Failed to load track list, error code(s): " + socketmessage.StageData.ErrorMessage.toString())
                     //console.log(socketmessage)
@@ -360,14 +361,6 @@ function DisplayNewInteraction(Interaction) {
         minute: '2-digit',
         second: '2-digit'
     });
-
-    if (p2.innerHTML == 1) {
-        alert(p1.innerHTML + " has liked the message: " + p3.innerHTML)
-
-    } else {
-        alert(p1.innerHTML + " has disliked the message: " + p3.innerHTML)
-
-    }
 
 }
 

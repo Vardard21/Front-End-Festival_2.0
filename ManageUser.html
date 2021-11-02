@@ -31,7 +31,7 @@
         <span class="navbar-text">Manage Users</span>
     </ul>
     <ul class="nav navbar-nav mr-auto">
-        <li id="UserName" class="navbar-text" class="nav-link"></li>  
+        <li id="UserName" class="navbar-text" class="nav-link"></li>
     </ul>
     <ul class="nav navbar-nav">
         <li class="nav-item"><a class="nav-link" onclick="Logout();">Logout <i class="bi bi-arrow-right-square"></i></a>
@@ -42,17 +42,21 @@
 <!-- main body -->
 <div class="container-fluid" style="margin-top: 110px;">
     <div id="alertwindow"></div>
+    <div class="col-sm-12">
+        <h2 class="font-weight-bold">User Details</h2>
+    </div>
     <div class="row section">
         <table style="width: 50%;">
             <thead>
                 <tr>
-                    <th style="width: 20%;"> User Name</th>
-                    <th style="width: 20%;"> User ID</th>
-                    <th style="width: 20%;"> User Role</th>
+                    <th style="width: 20%;"> ID</th>
+                    <th style="width: 20%;"> Name</th>
+                    <th style="width: 20%;"> Role</th>
                 </tr>
             </thead>
             <tbody id="myUsers">
             </tbody>
+
         </table>
     </div>
 </div>
@@ -74,9 +78,9 @@
     <!-- Button to Open the Modal -->
     <!-- The Modal -->
     <div class="modal fade" id="myModal">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-dialog modal-dialog-centered"></div>
-              <div class="modal-content">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-dialog modal-dialog-centered"></div>
+            <div class="modal-content">
 
                 <!-- Modal Header -->
                 <div class="modal-header">
@@ -110,34 +114,7 @@
     </div>
 </div>
 
-</div>
-<div class="container">
-    <div class="row">
 
-        <div class="col-sm-8">
-            <div>
-                <label for="userID">user ID:</label>
-                <input id="userID" type="number" placeholder="Enter userID"><br>
-            </div>
-            <div>
-                <label for="userrole">user Role:</label>
-                <input id="userRole" type="text" placeholder="Enter user Role"><br>
-            </div>
-        </div>
-        <div class="col-sm-2">
-            <!-- Button on the right to create the stage -->
-            <a>
-                <button class="btn" value="edit" onclick="EditUser();">Edit <i class=""></i></button>
-            </a>
-            <a> <br><br>
-            </a>
-            <a>
-                <button class="btn" value="delete" onclick="DeleteUser();">Delete User <i class=""></i></button>
-
-            </a>
-        </div>
-    </div>
-</div>
 
 <!-- foot bar -->
 <nav class="navbar navbar-expand-sm mt-auto">
