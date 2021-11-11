@@ -7,7 +7,6 @@
 
 
 //3) Private Account URL
-
 const actualurl = "festivalchatbackend.azurewebsites.net";
 
 
